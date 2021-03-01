@@ -2,29 +2,36 @@
  * YOUR CODE HERE *
  ******************/
 
-const getFirstItemFrom = ["1, 1, 2, 3, 5, 8"];
-index = getFirstItemFrom.length[0];
-
-console.log("What is the first item in the array?");
-
-const getLastItemFrom = ("1, 1, 2, 3, 5, 8");
-index = getLastItemFrom.length[- 1];
-console.log("What is the last item of the array?");
-
-const getIndex3 = (["Hello ", "darkness", "my ", "old", "friend"]);
-index = getIndex3.arr.length[3];
-console.log("What is the item at index 3?");
-
-const isLongList = (["A", "New", "month", "brings", "new", "opportunities", "to", "reset", "readjust", "refocus"]);
-  if (isLongList === arr.length[10])
-    isLongList = true;
-
-const firstItemIsNumber = ("20, 10, 5");
-return true;
+function getFirstItemFrom(arr) {
+  return arr[0];
+}
 
 
+function getLastItemFrom(arr) {
+  return arr[arr.length -1];
+}
 
+function getIndex3(arr) {
+  if(arr.length < 4) {
+    return arr[arr.length -1];
+  } else {
+    return arr[3];
+  }    
+}
 
+function isLongList(arr) {
+  return arr.length >= 10;
+}
+
+function firstItemIsNumber(arr) {
+  const firstItem = arr[0];
+  return typeof firstItem === "number";
+}
+
+function secondCharOfThirdString(arr) {
+  const thirdItem = arr[2];
+  return thirdItem [1];
+}
 
 
  /********************************************
